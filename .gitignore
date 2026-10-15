@@ -1,3 +1,23 @@
+# API credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Execution logs and reports
+logs/
+reports/
+
+# macOS
+.DS_Store
+
+# Private SSL keys
+**/ssl/key.pem
+**/ssl/*.key
 .venv/
 .env
 .env.*
@@ -9,3 +29,40 @@ data/*
 !data/.gitkeep
 reports/*
 !reports/.gitkeep
+
+reports/
+
+# Environment variables and API credentials
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Logs and generated reports
+logs/
+reports/
+!reports/.gitkeep
+
+# Local generated data
+data/processed/
+
+# MISP Docker installation (separate Git repository)
+/infrastructure/misp-docker/
+
+# Private certificates and keys
+*.key
+*.pem
+*.p12
+*.pfx
+
+# macOS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
